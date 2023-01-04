@@ -463,6 +463,10 @@
             }
           }
         ]
+      },
+      "cancelOnBuildFailing" : {
+          "description": "The condition for canceling the job as soon as the build is marked as failing.",
+          "type": "boolean"
       }
     },
     "blockStep": {
@@ -894,6 +898,9 @@
         },
         "soft_fail": {
           "$ref": "#/definitions/commonOptions/softFail"
+        },
+        "cancel_on_build_failing" : {
+          "$ref": "#/definitions/commonOptions/cancelOnBuildFailing"
         },
         "retry": {
           "type": "object",
